@@ -1,0 +1,10 @@
+.project-blurb {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .project-blurb + .project-blurb {
+    margin-left: 2em;
+  }
+}

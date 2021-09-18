@@ -1,0 +1,36 @@
+.portfolio-item {
+  background: var(--clr-dark);
+  overflow: hidden;
+}
+
+.portfolio-item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-img:hover,
+.portfolio-item:focus .portfolio-img {
+  transform: scale(1.2);
+  opacity: .5;
+}
+
+.portfolio-img-text {
+  position: relative;
+  text-align: center;
+  color: var(--clr-light);
+  font-size: var(--fs-h3);
+}
+
+.portfolio-img {
+  transition:
+    transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+}
+
+.portfolio-text {
+  color: var(--clr-light);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
