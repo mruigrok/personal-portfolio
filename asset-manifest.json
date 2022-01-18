@@ -1,30 +1,25 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.002e5cb2.chunk.css",
-    "main.js": "/personal-portfolio/static/js/main.235e1978.chunk.js",
-    "main.js.map": "/personal-portfolio/static/js/main.235e1978.chunk.js.map",
-    "runtime-main.js": "/personal-portfolio/static/js/runtime-main.1890f2f1.js",
-    "runtime-main.js.map": "/personal-portfolio/static/js/runtime-main.1890f2f1.js.map",
-    "static/js/2.a1c5aff5.chunk.js": "/personal-portfolio/static/js/2.a1c5aff5.chunk.js",
-    "static/js/2.a1c5aff5.chunk.js.map": "/personal-portfolio/static/js/2.a1c5aff5.chunk.js.map",
+    "main.css": "/personal-portfolio/static/css/main.73462eb8.css",
+    "main.js": "/personal-portfolio/static/js/main.6715af04.js",
+    "static/media/monitor-04.jpg": "/personal-portfolio/static/media/monitor-04.c03648a835522cbb8335.jpg",
+    "static/media/headshot.jpg": "/personal-portfolio/static/media/headshot.061335c4d3294749a8d5.jpg",
+    "static/media/laptop-03.jpg": "/personal-portfolio/static/media/laptop-03.90f62493023bc60cb480.jpg",
+    "static/media/code.jpg": "/personal-portfolio/static/media/code.c6740980b16ecfb03fbb.jpg",
+    "static/media/city-01.jpg": "/personal-portfolio/static/media/city-01.6f3d8113144932e36f46.jpg",
+    "static/media/welding-01.jpg": "/personal-portfolio/static/media/welding-01.ebecb915655097871740.jpg",
+    "static/media/oil-cap.jpg": "/personal-portfolio/static/media/oil-cap.a416761d5736485b6b70.jpg",
+    "static/media/laptop-01.jpg": "/personal-portfolio/static/media/laptop-01.5d82dd1a45767171b2af.jpg",
+    "static/media/road-01.jpg": "/personal-portfolio/static/media/road-01.72f77d5ea72630a09ffe.jpg",
+    "static/media/mnr-resume.pdf": "/personal-portfolio/static/media/mnr-resume.f39369caefaac81599b2.pdf",
+    "static/media/rotary-03.jpg": "/personal-portfolio/static/media/rotary-03.93796d4494483100858d.jpg",
+    "static/media/white.jfif": "/personal-portfolio/static/media/white.cac2a7bb7383453406e0.jfif",
     "index.html": "/personal-portfolio/index.html",
-    "static/css/main.002e5cb2.chunk.css.map": "/personal-portfolio/static/css/main.002e5cb2.chunk.css.map",
-    "static/js/2.a1c5aff5.chunk.js.LICENSE.txt": "/personal-portfolio/static/js/2.a1c5aff5.chunk.js.LICENSE.txt",
-    "static/media/city-01.6f3d8113.jpg": "/personal-portfolio/static/media/city-01.6f3d8113.jpg",
-    "static/media/code.c6740980.jpg": "/personal-portfolio/static/media/code.c6740980.jpg",
-    "static/media/headshot.061335c4.jpg": "/personal-portfolio/static/media/headshot.061335c4.jpg",
-    "static/media/laptop-01.5d82dd1a.jpg": "/personal-portfolio/static/media/laptop-01.5d82dd1a.jpg",
-    "static/media/laptop-03.90f62493.jpg": "/personal-portfolio/static/media/laptop-03.90f62493.jpg",
-    "static/media/mnr-resume.f39369ca.pdf": "/personal-portfolio/static/media/mnr-resume.f39369ca.pdf",
-    "static/media/monitor-04.c03648a8.jpg": "/personal-portfolio/static/media/monitor-04.c03648a8.jpg",
-    "static/media/style.css": "/personal-portfolio/static/media/white.cac2a7bb.jfif",
-    "static/media/rotary-03.93796d44.jpg": "/personal-portfolio/static/media/rotary-03.93796d44.jpg",
-    "static/media/welding-01.ebecb915.jpg": "/personal-portfolio/static/media/welding-01.ebecb915.jpg"
+    "main.73462eb8.css.map": "/personal-portfolio/static/css/main.73462eb8.css.map",
+    "main.6715af04.js.map": "/personal-portfolio/static/js/main.6715af04.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.1890f2f1.js",
-    "static/js/2.a1c5aff5.chunk.js",
-    "static/css/main.002e5cb2.chunk.css",
-    "static/js/main.235e1978.chunk.js"
+    "static/css/main.73462eb8.css",
+    "static/js/main.6715af04.js"
   ]
 }
