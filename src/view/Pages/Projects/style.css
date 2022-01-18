@@ -1,0 +1,6 @@
+.nothing-here {
+    background-color: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding-top: 20px;
+}

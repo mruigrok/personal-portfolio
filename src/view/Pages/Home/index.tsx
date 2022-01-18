@@ -14,24 +14,25 @@ import rotaryImg from '../../../images/rotary-03.jpg';
 import weldingImg from '../../../images/welding-01.jpg';
 import PortfolioProjectCard, { PortfolioProjectCardProps } from '../../../common/PortfolioProjectCard';
 import ProjectBlurb, { ProjectBlurbProps } from '../../../common/ProjectBlurb';
+import { useAutoScroll } from '../../hooks';
 
 /** Navigation bar items */
 const NavBarItems: NavHamburgerProps = {
   navItems: [
     {
-      link: '#home',
+      link: '#/#home',
       text: 'Home',
     },
     {
-      link: '#projects',
+      link: '#/#projects',
       text: 'Projects',
     },
     {
-      link: '#about',
+      link: '#/#about',
       text: 'About',
     },
     {
-      link: '#work',
+      link: '#/#work',
       text: 'Portfolio',
     },
   ],
@@ -81,12 +82,12 @@ const PortfolioProjectCardItems: PortfolioProjectCardProps[] = [
     cardText: 'Python AV Simulation',
   },
   {
-    link: '/projects',
+    link: '#/projects',
     image: weldingImg,
     cardText: 'Metal and Wood Projects',
   },
   {
-    link: '/projects',
+    link: '#/projects',
     image: rotaryImg,
     cardText: '3D Printed Rotary Engine',
   },
@@ -102,67 +103,70 @@ const PortfolioProjectCards = PortfolioProjectCardItems.map((item) => (
   />
 ));
 
-const HomePage = (): JSX.Element => (
-  <>
-    <header className="home-header">
-      <NavHamburger navItems={NavBarItems.navItems} />
-    </header>
+const HomePage = (): JSX.Element => {
+  useAutoScroll();
+  return (
+    <>
+      <header className="home-header">
+        <NavHamburger navItems={NavBarItems.navItems} />
+      </header>
 
-    {/** Intro Section */}
-    <section className="intro" id="home">
-      <h1 className="section__title section__title--intro">
-        Hi, I am
-        <strong> Matthew Ruigrok </strong>
-      </h1>
-      <p className="section__subtitle section__subtitle--intro"> Mechatronics Engineering @ McMaster University </p>
-      <img src={headshotImg} alt="" className="intro__img" />
-    </section>
+      {/** Intro Section */}
+      <section className="intro" id="home">
+        <h1 className="section__title section__title--intro">
+          Hi, I am
+          <strong> Matthew Ruigrok </strong>
+        </h1>
+        <p className="section__subtitle section__subtitle--intro"> Mechatronics Engineering @ McMaster University </p>
+        <img src={headshotImg} alt="" className="intro__img" />
+      </section>
 
-    {/** Project Section */}
-    <section className="my-projects" id="projects">
-      <h2 className="section__title section__title--projects"> Projects </h2>
-      <div className="projects">
-        {ProjectBlurbs}
-      </div>
-      <a href="#work" className="btn"> More Projects </a>
-    </section>
-
-    {/** About Me Section */}
-    <section className="about-me" id="about">
-      <h2 className="section__title section__title--about"> About Me </h2>
-      <p className="section__subtitle section__subtitle--about" />
-      <div className="about-me__body">
-        <p>
-          I am a fourth year student at
-          <strong> McMaster University </strong>
-          currently pursuing a Bachelor of Engineering in Mechatronics.
-          Outside of school I enjoy playing a variety of sports (hockey and soccer are my
-          favourites) as well as working with my hands.I am a hobbyist metal fabricator and
-          wood worker and have created a variety of rustic furniture pieces. I have previous
-          internship experience at AWS and Stellantis (formerly FCA) and my expected
-          graduation date is
-          <strong> December 2021 </strong>
-          . I will be seeking full-time employment post-graduation.
-        </p>
-        <div className="resume">
-          <a className="resume-link" href={resume} target="_blank" rel="noreferrer"><p> Get Resume </p></a>
+      {/** Project Section */}
+      <section className="my-projects" id="projects">
+        <h2 className="section__title section__title--projects"> Projects </h2>
+        <div className="projects">
+          {ProjectBlurbs}
         </div>
-      </div>
-      <img src={aboutMeImg} alt="" className="about-me__img" />
-    </section>
+        <a href="#/#work" className="btn"> More Projects </a>
+      </section>
 
-    {/** Portfolio Section */}
-    <section className="my-work" id="work">
-      <h2 className="section__title section__title--work"> Portfolio </h2>
-      <p className="section__subtitle section__subtitle--work" />
-      <div className="portfolio">
-        { PortfolioProjectCards }
-      </div>
-    </section>
+      {/** About Me Section */}
+      <section className="about-me" id="about">
+        <h2 className="section__title section__title--about"> About Me </h2>
+        <p className="section__subtitle section__subtitle--about" />
+        <div className="about-me__body">
+          <p>
+            I am a fourth year student at
+            <strong> McMaster University </strong>
+            currently pursuing a Bachelor of Engineering in Mechatronics.
+            Outside of school I enjoy playing a variety of sports (hockey and soccer are my
+            favourites) as well as working with my hands.I am a hobbyist metal fabricator and
+            wood worker and have created a variety of rustic furniture pieces. I have previous
+            internship experience at AWS and Stellantis (formerly FCA) and my expected
+            graduation date is
+            <strong> December 2021 </strong>
+            . I will be seeking full-time employment post-graduation.
+          </p>
+          <div className="resume">
+            <a className="resume-link" href={resume} target="_blank" rel="noreferrer"><p> Get Resume </p></a>
+          </div>
+        </div>
+        <img src={aboutMeImg} alt="" className="about-me__img" />
+      </section>
 
-    {/** Add footer to the page */}
-    <PageFooter />
-  </>
-);
+      {/** Portfolio Section */}
+      <section className="my-work" id="work">
+        <h2 className="section__title section__title--work"> Portfolio </h2>
+        <p className="section__subtitle section__subtitle--work" />
+        <div className="portfolio">
+          { PortfolioProjectCards }
+        </div>
+      </section>
+
+      {/** Add footer to the page */}
+      <PageFooter />
+    </>
+  );
+};
 
 export default HomePage;

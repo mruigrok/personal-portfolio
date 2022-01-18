@@ -38,13 +38,11 @@ const NavHamburger: React.FC<NavHamburgerProps> = (props): JSX.Element => {
   );
 
   const NavBar = (
-    <>
-      <nav className="nav">
-        <ul className="nav-list">
-          {NavListItems}
-        </ul>
-      </nav>
-    </>
+    <nav className="nav">
+      <ul className="nav-list">
+        {NavListItems}
+      </ul>
+    </nav>
   );
 
   return (

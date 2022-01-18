@@ -11,20 +11,20 @@ interface SocialListItemProps {
   icon: string;
 }
 
+/** A Social List item. External link and font-awesome icon are the props. */
+const SocialListItem: React.FC<SocialListItemProps> = (props) => (
+  <li className="social-list-item">
+    <a className="social-list-link" href={props.link}>
+      <i className={props.icon} />
+    </a>
+  </li>
+);
+
 /**
  * React component for the page footer. Has email and social contacts.
  * @returns JSX.Element
  */
 const PageFooter = (): JSX.Element => {
-  /** A Social List item. External link and font-awesome icon are the props. */
-  const SocialListItem: React.FC<SocialListItemProps> = (props) => (
-    <li className="social-list-item">
-      <a className="social-list-link" href={props.link}>
-        <i className={props.icon} />
-      </a>
-    </li>
-  );
-
   /** The items to add to the social list in the footer. */
   const SocialList: SocialListItemProps[] = [
     {
@@ -47,14 +47,12 @@ const PageFooter = (): JSX.Element => {
   ));
 
   return (
-    <>
-      <div className="footer">
-        <a href="mailto:mruigrok6@gmail.com" className="email-link">mruigrok6@gmail.com</a>
-        <ul className="social-contact-list">
-          { SocialListItems }
-        </ul>
-      </div>
-    </>
+    <div className="footer">
+      <a href="mailto:mruigrok6@gmail.com" className="email-link">mruigrok6@gmail.com</a>
+      <ul className="social-contact-list">
+        { SocialListItems }
+      </ul>
+    </div>
   );
 };
 
