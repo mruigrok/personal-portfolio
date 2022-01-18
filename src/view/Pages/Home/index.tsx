@@ -15,6 +15,7 @@ import weldingImg from '../../../images/welding-01.jpg';
 import PortfolioProjectCard, { PortfolioProjectCardProps } from '../../../common/PortfolioProjectCard';
 import ProjectBlurb, { ProjectBlurbProps } from '../../../common/ProjectBlurb';
 
+/** Navigation bar items */
 const NavBarItems: NavHamburgerProps = {
   navItems: [
     {
@@ -82,7 +83,7 @@ const PortfolioProjectCardItems: PortfolioProjectCardProps[] = [
   {
     link: '/projects',
     image: weldingImg,
-    cardText: 'Metal and Wood Project',
+    cardText: 'Metal and Wood Projects',
   },
   {
     link: '/projects',

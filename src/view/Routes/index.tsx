@@ -6,7 +6,8 @@ import ProjectsPage from '../Pages/Projects';
 const Routes = (): JSX.Element => {
   return (
     <>
-      <BrowserRouter basename="/personal-portfolio">
+      {/* <BrowserRouter basename="/personal-portfolio"> */}
+      <BrowserRouter basename="/">
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/projects" component={ProjectsPage} />
