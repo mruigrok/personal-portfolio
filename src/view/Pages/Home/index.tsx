@@ -136,16 +136,13 @@ const HomePage = (): JSX.Element => {
         <p className="section__subtitle section__subtitle--about" />
         <div className="about-me__body">
           <p>
-            I am a fourth year student at
+            I graduated from
             <strong> McMaster University </strong>
-            currently pursuing a Bachelor of Engineering in Mechatronics.
-            Outside of school I enjoy playing a variety of sports (hockey and soccer are my
-            favourites) as well as working with my hands.I am a hobbyist metal fabricator and
-            wood worker and have created a variety of rustic furniture pieces. I have previous
-            internship experience at AWS and Stellantis (formerly FCA) and my expected
-            graduation date is
-            <strong> December 2021 </strong>
-            . I will be seeking full-time employment post-graduation.
+            with a Bachelor of Engineering in Mechatronics and have previous internship experience
+            at AWS and Stellantis. I have interest in in Software Development, Autonomous Vehicles,
+            and Robotics. Outside of work I enjoy playing a variety of sports, including hockey and
+            soccer, as well as working with my hands. I am a hobbyist
+            metal fabricator and wood worker and have created a variety of rustic furniture pieces.
           </p>
           <div className="resume">
             <a className="resume-link" href={resume} target="_blank" rel="noreferrer"><p> Get Resume </p></a>

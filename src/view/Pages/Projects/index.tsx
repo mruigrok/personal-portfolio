@@ -26,7 +26,7 @@ const ArticleListItems: ArticleCardProps[] = [
   {
     image: rotaryImg,
     articleTitle: '3D Printed Rotary Engine',
-    articleDesc: 'Somehow it is more unreliable than the real thing...',
+    articleDesc: 'Somehow it is less reliable than the real thing...',
     href: '#/',
   },
   {
