@@ -8,7 +8,6 @@ export const useAutoScroll = () => {
     /** If not a hash link, scroll to top, else scroll to id */
     if (hash === '') {
       window.scrollTo(0, 0);
-      console.log('here');
     } else {
       setTimeout(() => {
         const id = hash.replace('#', '');

@@ -34,6 +34,7 @@
         "linebreak-style": "off",
         "react/destructuring-assignment": "off",
         "react/function-component-definition": "off",
+        "react/jsx-curly-brace-presence": "off",
         "no-shadow": "off",
         "@typescript-eslint/no-shadow": ["error"],
         "arrow-body-style": "off",

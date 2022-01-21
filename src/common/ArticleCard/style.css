@@ -1,0 +1,51 @@
+.article-card {
+  width: 750px;
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.article-card-link {
+  text-decoration: none;
+}
+
+.article-card-link:visited {
+  color: black;
+}
+
+.article-img-div {
+  float: right;
+}
+
+.article-img {
+  max-width: 250px;
+  object-fit: contain;
+  padding-left: 25px;
+}
+
+.article-desc {
+  margin-bottom: 0;
+}
+
+.article-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.article-info .info-block {
+  height: 30px;
+  color: grey;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: grey;
+  border-radius: 50%;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+}

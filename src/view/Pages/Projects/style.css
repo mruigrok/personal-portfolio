@@ -1,6 +1,9 @@
-.nothing-here {
-    background-color: #111;
-    color: var(--clr-accent);
-    text-align: center;
-    padding-top: 20px;
+.article-list {
+  /* background-color: #111;
+  color: var(--clr-accent); */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 10px;
+  position: relative;
 }
