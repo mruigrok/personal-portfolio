@@ -1,9 +1,7 @@
 .article-list {
-  /* background-color: #111;
-  color: var(--clr-accent); */
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding-top: 10px;
+  padding: 25px;
   position: relative;
 }

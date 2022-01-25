@@ -5,8 +5,9 @@ import NavHamburger, { NavHamburgerProps } from '../../../common/NavHamburger';
 import PageFooter from '../../../common/PageFooter';
 import ArticleCard, { ArticleCardProps } from '../../../common/ArticleCard';
 import { useAutoScroll } from '../../hooks';
-import monitorImg from '../../../images/monitor-04.jpg';
+import weldingImg from '../../../images/welding-01.jpg';
 import rotaryImg from '../../../images/rotary-03.jpg';
+import cityImg from '../../../images/city-01.jpg';
 
 /** Navigation bar items */
 const NavBarItems: NavHamburgerProps = {
@@ -26,14 +27,26 @@ const ArticleListItems: ArticleCardProps[] = [
   {
     image: rotaryImg,
     articleTitle: '3D Printed Rotary Engine',
-    articleDesc: 'Somehow it is less reliable than the real thing...',
+    articleDesc: 'Somehow less reliable than the real thing...',
+    articleType: 'Side Project',
     href: '#/',
+    date: 'Jan 20',
+    readTime: 6,
   },
   {
-    image: monitorImg,
+    image: weldingImg,
+    articleTitle: 'Inept welder for hire! My journey to becoming a mediocre metalworker',
+    articleDesc: 'Including a collection of my past and present works',
+    href: '#/',
+    articleType: 'Projects',
+    readTime: 3,
+  },
+  {
+    image: cityImg,
     articleTitle: 'A Search Engine That Finds You Weird Old Books',
     articleDesc: 'To help “rewild your attention” I built a book-finding app',
     href: '#/',
+    articleType: 'Fun',
   },
 ];
 
@@ -43,7 +56,10 @@ const ArticleList = ArticleListItems.map((item) => (
     image={item.image}
     articleTitle={item.articleTitle}
     articleDesc={item.articleDesc}
+    articleType={item.articleType}
     href={item.href}
+    date={item.date}
+    readTime={item.readTime}
   />
 ));
 

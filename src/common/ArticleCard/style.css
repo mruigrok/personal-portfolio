@@ -4,6 +4,12 @@
   height: 100%;
   overflow: auto;
   margin: 0 auto;
+  display: flex; 
+}
+
+.article-text {
+  margin-right: auto;
+  position: relative;
 }
 
 .article-card-link {
@@ -14,12 +20,8 @@
   color: black;
 }
 
-.article-img-div {
-  float: right;
-}
-
 .article-img {
-  max-width: 250px;
+  max-width: 225px;
   object-fit: contain;
   padding-left: 25px;
 }
@@ -29,6 +31,8 @@
 }
 
 .article-info {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;

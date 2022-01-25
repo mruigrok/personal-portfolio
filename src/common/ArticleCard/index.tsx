@@ -9,9 +9,10 @@ export interface ArticleCardProps {
   image: string;
   articleTitle: string;
   articleDesc: string;
-  date?: Date;
+  href: string;
+  date?: string;
   readTime?: number;
-  href?: string;
+  articleType?: string;
 }
 
 const TextDot:React.FC = (): JSX.Element => (
@@ -28,9 +29,6 @@ const TextDot:React.FC = (): JSX.Element => (
 const ArticleCard: React.FC<ArticleCardProps> = (props): JSX.Element => (
   <a className="article-card-link" href={props.href}>
     <div className="article-card">
-      <div className="article-img-div">
-        <img src={props.image} alt="" className="article-img" />
-      </div>
       <div className="article-text">
         <h3 className="article-title">
           {props.articleTitle}
@@ -40,17 +38,20 @@ const ArticleCard: React.FC<ArticleCardProps> = (props): JSX.Element => (
         </p>
         <div className="article-info">
           <div className="info-block">
-            Jan 20
-            <TextDot />
+            { props.date || '' }
+            { props.date && <TextDot /> }
           </div>
           <div className="info-block">
-            8 min read
-            <TextDot />
+            { props.readTime ? `${props.readTime} min read` : '' }
+            { props.readTime && <TextDot /> }
           </div>
           <div className="info-block">
-            Apps
+            { props.articleType || 'Apps' }
           </div>
         </div>
+      </div>
+      <div className="article-img-div">
+        <img src={props.image} alt="" className="article-img" />
       </div>
     </div>
   </a>

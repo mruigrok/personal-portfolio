@@ -24,7 +24,7 @@ const NavBarItems: NavHamburgerProps = {
       text: 'Home',
     },
     {
-      link: '#/#projects',
+      link: '#/projects',
       text: 'Projects',
     },
     {
@@ -138,11 +138,11 @@ const HomePage = (): JSX.Element => {
           <p>
             I graduated from
             <strong> McMaster University </strong>
-            with a Bachelor of Engineering in Mechatronics and have previous internship experience
-            at AWS and Stellantis. I have interest in in Software Development, Autonomous Vehicles,
-            and Robotics. Outside of work I enjoy playing a variety of sports, including hockey and
-            soccer, as well as working with my hands. I am a hobbyist
-            metal fabricator and wood worker and have created a variety of rustic furniture pieces.
+            with a Bachelor of Engineering in Mechatronics and I have previous internship experience
+            at AWS and Stellantis. I qm interested in in Software Development, Autonomous Vehicles,
+            and Robotics. Outside of work I enjoy playing a variety of sports and working with my
+            hands. I am a hobbyist metal fabricator and wood worker and have created a variety of
+            rustic furniture pieces.
           </p>
           <div className="resume">
             <a className="resume-link" href={resume} target="_blank" rel="noreferrer"><p> Get Resume </p></a>
