@@ -20,7 +20,7 @@
   color: black;
 }
 
-.article-img {
+.article-card-img {
   max-width: 225px;
   object-fit: contain;
   padding-left: 25px;
@@ -36,20 +36,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-content: center;
   margin-top: 5px;
 }
 
 .article-info .info-block {
   height: 30px;
   color: grey;
-}
-
-.dot {
-  height: 5px;
-  width: 5px;
-  background-color: grey;
-  border-radius: 50%;
-  margin: 0 5px;
-  display: inline-block;
-  vertical-align: middle;
 }

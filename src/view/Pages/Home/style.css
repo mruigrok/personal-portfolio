@@ -1,5 +1,5 @@
 .home-header {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-extra-dark);
   height: 60px;
 }
 
@@ -99,7 +99,8 @@
 /* About Me */
 
 .about-me {
-  /*background-color: var(--clr-dark);*/
+  background-color: var(--clr-dark);
+  /*border-top: 5px solid var(--clr-light);*/
   background-image: url(../../../images/white.jfif);
   background-size: cover;
   color: var(--clr-dark);
@@ -166,12 +167,13 @@
 /** Portfolio section */
 .my-work {
   background-color: var(--clr-dark);
-  background-image: url('../../../images/oil-cap.jpg');
+  /*border-top: 5px solid var(--clr-light);*/
+  /*background-image: url('../../../images/oil-cap.jpg');*/
   color: var(--clr-light);
   text-align: center;
 }
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 }

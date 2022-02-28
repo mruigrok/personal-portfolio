@@ -1,23 +1,13 @@
 import React from 'react';
 import './style.css';
 
-/**
- * @param title the title
- * @param description the description
- */
-export interface ArticleCardProps {
-  image: string;
-  articleTitle: string;
-  articleDesc: string;
-  href: string;
-  date?: string;
-  readTime?: number;
-  articleType?: string;
-}
+import { ArticleBaseProps } from '../ArticleEntry';
+import TextDot from '../TextDot';
 
-const TextDot:React.FC = (): JSX.Element => (
-  <span className="dot" />
-);
+/** Extend to incude an option to display article or not */
+export interface ArticleCardProps extends ArticleBaseProps {
+  displayCard: boolean;
+}
 
 /**
  * React component for the article card. It returns a card outlining the article with a title,
@@ -26,7 +16,7 @@ const TextDot:React.FC = (): JSX.Element => (
  * @param props ArticleCardProps
  * @returns JSX.Element
  */
-const ArticleCard: React.FC<ArticleCardProps> = (props): JSX.Element => (
+const ArticleCard: React.FC<ArticleBaseProps> = (props): JSX.Element => (
   <a className="article-card-link" href={props.href}>
     <div className="article-card">
       <div className="article-text">
@@ -42,16 +32,16 @@ const ArticleCard: React.FC<ArticleCardProps> = (props): JSX.Element => (
             { props.date && <TextDot /> }
           </div>
           <div className="info-block">
-            { props.readTime ? `${props.readTime} min read` : '' }
-            { props.readTime && <TextDot /> }
+            { props.timeToRead ? `${props.timeToRead} min read` : '' }
+            { props.timeToRead && <TextDot /> }
           </div>
           <div className="info-block">
             { props.articleType || 'Apps' }
           </div>
         </div>
       </div>
-      <div className="article-img-div">
-        <img src={props.image} alt="" className="article-img" />
+      <div className="article-card-img-div">
+        <img src={props.image} alt="" className="article-card-img" />
       </div>
     </div>
   </a>

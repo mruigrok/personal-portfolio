@@ -1,7 +1,7 @@
 @import '../../index.css';
 
 .footer {
-  background: #111;
+  background: var(--clr-extra-dark);
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
